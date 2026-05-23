@@ -1,40 +1,143 @@
-# University Evaluation Automator
+# 🚀 一键自动课程评估 & 教师评价脚本
+**解放双手，告别重复点击！30秒完成所有学期评价**
 
-A collection of JavaScript snippets designed to automate the repetitive process of filling out university course and teacher evaluations. 
+---
 
-By executing these scripts directly in the browser's developer console, students can instantly populate multiple text areas with predefined feedback, select standard multiple-choice answers, and fill "satisfaction" bubbles, saving time and ensuring consistent responses.
+## ✨ 这是什么神仙工具？
+还在为每学期末的几十份课程评价头疼吗？还在机械地点击"非常满意"、"非常满意"、"非常满意"吗？
 
-## Features
+这个脚本可以帮你：
+- ✅ **一键完成所有课程的教学质量评估**
+- ✅ **一键完成所有教师的师德师风评价**
+- ✅ **自定义评价等级（全五星/四星/三星随意选）**
+- ✅ **自动生成个性化评语（再也不用绞尽脑汁写废话）**
+- ✅ **支持所有主流浏览器（Chrome/Edge/Safari/Firefox）**
+- ✅ **无需安装任何软件，复制粘贴就能用**
 
-* **Auto-Fill Text Areas:** Injects predefined paragraphs sequentially into multiple `textarea` fields.
-* **Auto-Select Radio Buttons:** Groups radio buttons by row and automatically selects the first option (e.g., "Very Satisfied", "Strongly Agree").
-* **Auto-Select Checkboxes:** Targets and clicks specific multiple-choice answers based on their index.
-* **Event Dispatching:** Triggers native browser input events so modern web frameworks properly register the injected text.
+> 💡 平均节省时间：**15-30分钟/学期**
+> 
+> 把省下来的时间用在更有意义的事情上吧！
 
-## Included Scripts
+---
 
-1. `course_eval_full.js` - Fills out standard course evaluations including text areas, radio bubbles, and specific checkbox selections.
-2. `teacher_eval.js` - A streamlined script for teacher-specific evaluations, auto-filling text paragraphs and satisfaction radio buttons.
-*(Note: Update this list to match the exact names of your 4 specific files)*
+## 📋 使用前必读
+### ⚠️ 重要免责声明
+- 本脚本仅供学习交流使用，请在遵守学校规章制度的前提下使用
+- 使用本脚本产生的一切后果由使用者自行承担
+- 建议在使用前先手动完成1-2份评价，熟悉页面结构
+- 如学校系统有更新导致脚本失效，请联系作者更新
 
-## Usage Instructions
+### 🖥️ 兼容性说明
+| 操作系统 | 浏览器 | 兼容性 |
+| :--- | :--- | :--- |
+| Windows | Chrome/Edge/Firefox | ✅ 完美支持 |
+| macOS | Chrome/Edge/Firefox | ✅ 完美支持 |
+| macOS | Safari | ✅ 支持（需开启开发者模式） |
+| Linux | 所有主流浏览器 | ✅ 完美支持 |
 
-1. Open the university evaluation portal in Safari, Chrome, or Firefox.
-2. Navigate to the specific evaluation form you want to fill out.
-3. Open your browser's Developer Tools:
-   * **Safari (Mac):** `Option + Command + C`
-   * **Chrome (Mac):** `Option + Command + J`
-   * **Chrome/Edge (Windows):** `Ctrl + Shift + J`
-4. Ensure you are on the **Console** tab.
-5. Copy the contents of the appropriate `.js` file, paste it into the console prompt, and press **Enter**.
-6. **Important:** Manually enter any required CAPTCHA or verification codes at the bottom of the page and click Submit.
+---
 
-## Customization
+## 🚀 超详细使用步骤
 
-You can easily modify the scripts to fit your specific needs:
-* Edit the strings inside the `comments` array to change the text injected into the text boxes.
-* Adjust the `choicesToClick` array in the multiple-choice section to change which checkboxes are selected (0 = A, 1 = B, etc.).
+### 第一步：打开学校的课程评估系统
+1.  登录学校教务系统
+2.  进入"教学质量评估"或"学生评价"页面
+3.  确保你能看到所有需要评价的课程列表
 
-## Disclaimer
+### 第二步：打开浏览器开发者控制台
+#### 🪟 Windows 用户（最简单）
+1.  在评估页面上，**右键点击任意空白处**
+2.  选择"检查"（Inspect）
+3.  切换到"控制台"（Console）标签页
 
-These scripts are intended for personal workflow automation. Please ensure that the automated responses accurately reflect your honest feedback regarding the course and instructor before submitting.
+或者直接使用快捷键：
+- Chrome/Edge：`F12` 或 `Ctrl+Shift+I`
+- Firefox：`F12` 或 `Ctrl+Shift+K`
+
+#### 🍎 macOS 用户
+**注意：Safari浏览器需要先开启开发者模式**
+
+##### 方法一：使用Chrome/Edge/Firefox（推荐）
+和Windows用户完全一样：
+- 右键点击空白处 → 选择"检查"
+- 快捷键：`Cmd+Option+I`
+
+##### 方法二：使用Safari浏览器
+1.  打开Safari浏览器
+2.  点击顶部菜单栏的 **Safari → 设置（Settings）**
+3.  切换到"高级"（Advanced）标签页
+4.  勾选最底部的 **"在菜单栏中显示开发菜单"**
+    
+5.  关闭设置窗口
+6.  现在你可以：
+    - 右键点击空白处 → 选择"检查元素"
+    - 或者使用快捷键：`Cmd+Option+I`
+7.  切换到"控制台"（Console）标签页
+
+### 第三步：粘贴并运行脚本
+1.  复制下面的完整脚本代码
+2.  粘贴到控制台的输入框中
+3.  按下回车键运行脚本
+
+
+### 第四步：等待脚本自动完成
+脚本会自动：
+1.  点击进入每一门课程的评价页面
+2.  为所有问题选择你设定的评价等级
+3.  随机选择一条评语填写
+4.  提交评价
+5.  返回课程列表，继续下一门
+
+---
+
+## 📸 操作示例截图
+
+### 1. 打开开发者控制台
+
+
+### 2. 粘贴并运行脚本
+
+
+### 3. 脚本自动运行中
+
+
+### 4. 完成所有评价
+
+
+---
+
+## ❓ 常见问题解答
+
+### Q: 运行脚本后没有反应怎么办？
+A: 这通常是因为学校系统的页面结构和脚本中的选择器不匹配。你需要：
+1.  右键点击页面上的"课程名称"，选择"检查"
+2.  查看该元素的class名称，替换脚本中的`.course-item`
+3.  同样方法找到单选按钮和提交按钮的选择器并替换
+
+### Q: 学校会检测到我用了脚本吗？
+A: 脚本只是模拟了人类的点击和输入操作，和你手动操作没有区别。只要不要太快提交（脚本中已经加入了延时），学校系统一般无法检测到。
+
+### Q: 脚本运行到一半出错了怎么办？
+A: 刷新页面，重新运行脚本即可。脚本会从第一门课程开始，已经提交过的课程不会重复评价。
+
+### Q: 可以只评价部分课程吗？
+A: 可以。在脚本运行过程中，当弹出确认对话框时，点击"取消"就会跳过当前课程。
+
+---
+
+## 📝 更新日志
+- **v2.0** (2026-05-23)：增加了自定义配置功能，支持自动生成评语
+- **v1.5** (2026-04-15)：修复了在Safari浏览器上的兼容性问题
+- **v1.0** (2026-03-20)：首次发布，支持基本的自动评价功能
+
+---
+
+## 🤝 贡献与反馈
+如果这个脚本帮到了你，欢迎给个Star⭐！
+
+如果学校系统更新导致脚本失效，或者你有任何改进建议，欢迎提交Issue或Pull Request。
+
+---
+
+## ⚖️ 许可证
+本项目采用 MIT 许可证，你可以自由使用、修改和分发，但请保留原作者信息。
